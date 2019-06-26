@@ -1,0 +1,6 @@
+#npm modules
+node_modules
+
+
+# Webpack bundle
+public/bundle.js
