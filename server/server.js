@@ -38,7 +38,6 @@ var onConnectDoThese = (socket) => {
 io.on('connection', onConnectDoThese);
 
 
-app.get('/', )
 
 server.listen(port, () => {
     console.log(`Listening on port ${port}`);
