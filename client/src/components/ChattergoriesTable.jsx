@@ -11,10 +11,10 @@ class ChattergoriesTable extends React.Component {
             chattergoryRows: [
                 {
                     username: 'User',
-                    food: 'Jelly',
+                    food: 'Jelly doughnut',
                     city: 'Jersey City',
                     javascript: 'Java',
-                    song: 'Jalyn Rose'
+                    song: 'Just Dance'
                 }
             ]
         }
