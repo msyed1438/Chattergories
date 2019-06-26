@@ -1,0 +1,15 @@
+.app-container {
+    border-style: double;
+}
+
+body {
+    background-color: rgb(201, 76, 76);
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+h1  {
+    text-align: center;
+}

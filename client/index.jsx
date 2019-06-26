@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ChattergoriesTable from './src/components/ChattergoriesTable.jsx';
-import styles from '../public/styles.css';
+//import styles from '../public/styles.css';
 const io = require('socket.io-client');
 //import io from 'socket.io-client/dist/socket.io';
 import CategoryForm from './src/components/CategoryForm.jsx';
@@ -43,7 +43,7 @@ class App extends React.Component {
 
     render(){
         return (
-            <div>
+            <div class='app-container'>
                 <h1>Welcome to Chattergories!</h1>
                 <ChattergoriesTable />
                 <CategoryForm username = {this.state.currentUser}/>
