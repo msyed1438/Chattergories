@@ -24,13 +24,13 @@ var onConnectDoThese = (socket) => {
     console.log('Show client.id: ', socket.id )
     //socket.emit('loadGame', scattergoriesStorage);
     console.log('These are the current number of scattergories players: ', io.engine.clientsCount)
-    socket.on('stopSignal', (playerData)=>{
-        console.log('Received Stop Signal', playerData)
-        socket.emit('stopRound');
+    socket.on('stopSignal', ()=>{
+        console.log('Received Stop Signal')
+        io.emit('stopRound');
     })
     socket.on('roundData', (roundData) => {
         scattergoriesStorage.gameData.push(roundData)
-        socket.emit('endRoundWithAllData', scattergoriesStorage.gameData)
+        io.emit('endRoundWithAllData', scattergoriesStorage.gameData)
     })
 
 }

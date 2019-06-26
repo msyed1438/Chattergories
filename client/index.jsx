@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ChattergoriesTable from './src/components/ChattegoriesTable.jsx';
+import ChattergoriesTable from './src/components/ChattergoriesTable.jsx';
 import styles from '../public/styles.css';
 const io = require('socket.io-client');
 //import io from 'socket.io-client/dist/socket.io';
